@@ -19,7 +19,7 @@ create_student() {
     fi
 }
 
-# Function to view all students
+# Function to view all students details
 view_students() {
     echo "List of Students:"
     cat students-list_1023.txt
@@ -30,7 +30,7 @@ delete_student() {
     echo "Enter student ID to delete:"
     read id
 
-    # Check if student ID exists
+    # Check if student ID exists with all other students details
     if grep -q "^.*,$id\$" students-list_1023.txt; then
         # Delete student record by ID
         sed -i "/^.*,$id\$/d" students-list_1023.txt
