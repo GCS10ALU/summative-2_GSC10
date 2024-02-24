@@ -19,7 +19,7 @@ create_student() {
     fi
 }
 
-# Function to view all students
+# Function to view all students id names and details
 view_students() {
     echo "List of Students:"
     cat students-list_1023.txt
